@@ -14,9 +14,6 @@ dotenv.config({
 });
 
 async function bootstrap() {
-  Logger.verbose(`mode : ${process.env.NODE_ENV}, `);
-  Logger.verbose(`mode : ${process.env.DATABASE_PASSWORD}, `);
-  Logger.verbose(`${__dirname}`);
   const app = await NestFactory.create(AppModule);
   const port = 3000;
 
